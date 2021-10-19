@@ -1,0 +1,23 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
