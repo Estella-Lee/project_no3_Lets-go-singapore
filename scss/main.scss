@@ -1,2 +1,402 @@
 @import "style.scss";
 @import "reset.scss";
+@import "mixin.scss";
+
+#container {
+    width: $width-wide;
+    background-color: $background-main;
+}
+
+header {
+    position: relative;
+    img {
+        width: $width-wide;
+    }
+
+    h1 {
+        position: absolute;
+        top: 0;     
+        right: 1%;  
+        font-size: 14vw;
+        color: #fff; 
+        opacity: .15;
+    }
+}
+
+main {
+    position: relative;
+}
+
+section.mainContentWrap {
+    .mainTxt {
+        width: $width-wide;
+        height: 50vh;
+        max-height: 300px;
+        min-height: 200px;
+        padding-top: 10vh;
+        text-align: center;
+
+        h2 {
+            @include title-style;
+        }
+        
+        span {
+            font: {
+                size: 1.8vw;
+                weight: bold;
+            }
+            color: $color-text;
+        }
+    }
+
+    .mainContents {
+        width: $width-wide;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0;
+        row-gap: 0;
+
+        .gbb {
+            position: relative;
+            width: $width-wide;
+            img {
+                width: $width-wide;
+            }
+
+            .contentDetail {
+                position: absolute;
+                bottom: 2%;
+                @include imgTxt-style(100%, 10%);
+            }
+        }
+
+        .landmark {
+            position: relative;
+            width: $width-wide;
+
+            img {
+                width: $width-wide;
+            }
+
+            .contentDetail {
+                position: absolute;
+                bottom: 2%;
+                left: 50%;
+                transform: translateX(-50%);
+                @include imgTxt-style(100%, 10%);
+            }
+        }
+
+        .slowTrip {
+            position: relative;
+            width: $width-wide;
+
+            img {
+                width: $width-wide;
+            }
+
+            .contentDetail {
+                position: absolute;
+                bottom: 2%;
+                left: 50%;
+                transform: translateX(-50%);
+                @include imgTxt-style(100%, 10%);
+            }
+        }
+
+        .michelin {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .michelinTxt {
+                flex-basis: 50%;
+                font: {
+                    family: $font-godic;
+                    size: 2vw;
+                    weight: bold;
+                }
+                text-align: center;
+                color: #fff;
+                background-color: $color-main;
+
+                p {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .michelinImg {
+                flex-basis: 50%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .safeTravels {
+            padding-top: 10%;
+            text-align: center;
+            background-color: $background-second;
+
+            h3 {
+                padding-bottom: 5%;
+                @include title-style;
+            }
+
+            p {
+                font-size: 1.2vw;
+                line-height: 2vw;
+            }
+
+            .moreBtn {
+                width: $width-wide;
+                height: 100%;
+                padding-top: 8%;
+                a {
+                   @include button-style(20%, 22%);
+                   line-height: 2.8vw;
+                }
+            }
+        }
+
+        .tradiFood {
+            width: $width-wide;
+
+            img {
+                width: $width-wide;
+            }
+        }
+
+        .raffles {
+            position: relative;
+            width: $width-wide;
+
+            img {
+                width: $width-wide;
+            }
+
+            .contentDetail {
+                position: absolute;
+                right: 0;
+                bottom: 2%;
+                @include imgTxt-style(100%, 12%);
+            }
+        }
+
+        .iconBox {
+            display: flex;
+            flex-wrap: wrap;
+            width: $width-wide;
+            text-align: center;
+
+            div {
+                padding: 4% 0;
+                flex-basis: $width-quarter;
+
+                img {
+                    width: 30%;
+                    margin: 0 auto;
+                }
+                
+                h3 {
+                    padding: 4% 0;
+                    @include title-style;
+                }
+
+                a {
+                    font-size: 1.2vw;
+                    color: $color-txtPoint;
+                }
+            }
+
+            div:nth-child(odd) {
+                background-color: $background-second;
+            }
+        }
+
+        .culture {
+            display: flex;
+            flex-wrap: wrap;
+            width: $width-wide;
+
+            .cultureBox01 {
+                flex-basis: 75%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .cultureTxt {
+                    flex-basis: 33.5%;
+                    padding: 5%;
+
+                    h3 {
+                        padding: 10% 0;
+                        margin-bottom: 10%;
+                        @include title-style;
+                    }
+
+                    p {
+                        width: 100%;
+                        font-size: 0.9vw;
+                        line-height: 2vw;
+                        text-align: center;
+                    }
+
+                    .moreBtn {
+                        width: $width-wide;
+                        padding-top: 40%;
+                        text-align: center;
+                        a {
+                            @include button-style(35%, 8%);
+                            line-height: 2.5vw;
+                        }
+                    }
+
+                }
+
+                .chinatown {
+                    flex-basis: 66.5%;
+                    position: relative;
+                    width: $width-wide;
+                    img {
+                        width: $width-wide;
+                    }
+        
+                    .contentDetail {
+                        position: absolute;
+                        bottom: 2%;
+                        @include imgTxt-style(100%, 10%);
+                    }
+                }
+            }
+
+            .cultureBox02 {
+                flex-basis: 25%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                .kampong {
+                    position: relative;
+                    width: $width-wide;
+                    img {
+                        width: $width-wide;
+                    }
+                    .contentDetail {
+                        position: absolute;
+                        right: 0;
+                        bottom: 2%;
+                        @include imgTxt-style(90%, 20%);
+                    }
+                }
+
+                .littleIndia {
+                    position: relative;
+                    width: $width-wide;
+
+                    img {
+                        width: $width-wide;
+                    }
+
+                    .contentDetail {
+                        position: absolute;
+                        right: 0;
+                        bottom: 2%;
+                        @include imgTxt-style(90%, 20%);
+                    }
+                }
+            }
+        }
+
+        // 그리드 배치
+        .item01 {
+            grid-column: 1/3;
+        }
+        .item02 {
+            grid-column: 3/4;
+        }
+        .item03 {
+            grid-column: 4/5;
+        }
+        .item04 {
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+        .item05 {
+            grid-column: 3/5;
+            grid-row: 2/3;
+        }
+        .item06 {
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+        .item07 {
+            grid-column: 3/5;
+            grid-row: 3/4
+        }
+        .item08 {
+            grid-column: 1/5;
+            grid-row: 4/5;
+        }
+        .item09 {
+            grid-column: 1/5;
+        }
+    }
+} //section.mainContentWrap end
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: $width-wide;
+
+    div {
+        flex-basis: 25%;
+        height: auto;
+        padding: {
+            left: 5%;
+            bottom: 8%;
+        }
+        background-color: #d7d7d7;
+    }
+
+    div:nth-child(even) {
+        background-color: #c2c2c2;
+    }
+
+    h4 {
+        padding-top: 20%;
+        font-size: 0.9vw;
+    }
+
+    .infoList li {
+        padding-top: 10%;
+        font-size: 0.7vw;
+    }
+
+    .connectSns {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                padding-right: 5%;
+                a {
+                width: 50px;
+                height: 50px;
+                padding-top: 8px;
+                border: 1px solid #524c4c;
+                border-radius: 50%;
+                }
+
+                img {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+    }
+}

@@ -12,6 +12,10 @@ body {
   background-color: #eee;
 }
 
+ul, li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   display: block;
@@ -20,4 +24,582 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+img {
+  display: block;
+}
+
+#container {
+  width: 100%;
+  background-color: #eee;
+}
+
+header {
+  position: relative;
+}
+
+header img {
+  width: 100%;
+}
+
+header h1 {
+  position: absolute;
+  top: 0;
+  right: 1%;
+  font-size: 14vw;
+  color: #fff;
+  opacity: .15;
+}
+
+main {
+  position: relative;
+}
+
+section.mainContentWrap .mainTxt {
+  width: 100%;
+  height: 50vh;
+  max-height: 300px;
+  min-height: 200px;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+section.mainContentWrap .mainTxt h2 {
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 2vw;
+  color: #f63a3a;
+}
+
+section.mainContentWrap .mainTxt span {
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: #524c4c;
+}
+
+section.mainContentWrap .mainContents {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 0;
+}
+
+section.mainContentWrap .mainContents .gbb {
+  position: relative;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .gbb img {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .gbb .contentDetail {
+  position: absolute;
+  bottom: 2%;
+  display: block;
+  width: 100%;
+  height: 10%;
+  max-height: 100px;
+  max-width: 400px;
+  padding-top: .8%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: #fff;
+  text-align: center;
+  background-color: #524c4cb7;
+}
+
+section.mainContentWrap .mainContents .landmark {
+  position: relative;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .landmark img {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .landmark .contentDetail {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  height: 10%;
+  max-height: 100px;
+  max-width: 400px;
+  padding-top: .8%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: #fff;
+  text-align: center;
+  background-color: #524c4cb7;
+}
+
+section.mainContentWrap .mainContents .slowTrip {
+  position: relative;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .slowTrip img {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .slowTrip .contentDetail {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  height: 10%;
+  max-height: 100px;
+  max-width: 400px;
+  padding-top: .8%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: #fff;
+  text-align: center;
+  background-color: #524c4cb7;
+}
+
+section.mainContentWrap .mainContents .michelin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .michelin .michelinTxt {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #f63a3a;
+}
+
+section.mainContentWrap .mainContents .michelin .michelinTxt p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+}
+
+section.mainContentWrap .mainContents .michelin .michelinImg {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+section.mainContentWrap .mainContents .michelin .michelinImg img {
+  width: 100%;
+  height: auto;
+}
+
+section.mainContentWrap .mainContents .safeTravels {
+  padding-top: 10%;
+  text-align: center;
+  background-color: #efd9d9;
+}
+
+section.mainContentWrap .mainContents .safeTravels h3 {
+  padding-bottom: 5%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 2vw;
+  color: #f63a3a;
+}
+
+section.mainContentWrap .mainContents .safeTravels p {
+  font-size: 1.2vw;
+  line-height: 2vw;
+}
+
+section.mainContentWrap .mainContents .safeTravels .moreBtn {
+  width: 100%;
+  height: 100%;
+  padding-top: 8%;
+}
+
+section.mainContentWrap .mainContents .safeTravels .moreBtn a {
+  width: 20%;
+  height: 22%;
+  margin: 0 auto;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: #f63a3a;
+  border: 1px solid #000;
+  line-height: 2.8vw;
+}
+
+section.mainContentWrap .mainContents .safeTravels .moreBtn a:hover {
+  color: #fff;
+  background-color: #f63a3a;
+  border: 1px solid #f63a3a;
+  text-decoration: none;
+}
+
+section.mainContentWrap .mainContents .tradiFood {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .tradiFood img {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .raffles {
+  position: relative;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .raffles img {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .raffles .contentDetail {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  display: block;
+  width: 100%;
+  height: 12%;
+  max-height: 100px;
+  max-width: 400px;
+  padding-top: .8%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: #fff;
+  text-align: center;
+  background-color: #524c4cb7;
+}
+
+section.mainContentWrap .mainContents .iconBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+section.mainContentWrap .mainContents .iconBox div {
+  padding: 4% 0;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+section.mainContentWrap .mainContents .iconBox div img {
+  width: 30%;
+  margin: 0 auto;
+}
+
+section.mainContentWrap .mainContents .iconBox div h3 {
+  padding: 4% 0;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 2vw;
+  color: #f63a3a;
+}
+
+section.mainContentWrap .mainContents .iconBox div a {
+  font-size: 1.2vw;
+  color: #f63a3a;
+}
+
+section.mainContentWrap .mainContents .iconBox div:nth-child(odd) {
+  background-color: #efd9d9;
+}
+
+section.mainContentWrap .mainContents .culture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .cultureTxt {
+  -ms-flex-preferred-size: 33.5%;
+      flex-basis: 33.5%;
+  padding: 5%;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .cultureTxt h3 {
+  padding: 10% 0;
+  margin-bottom: 10%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 2vw;
+  color: #f63a3a;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .cultureTxt p {
+  width: 100%;
+  font-size: 0.9vw;
+  line-height: 2vw;
+  text-align: center;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .cultureTxt .moreBtn {
+  width: 100%;
+  padding-top: 40%;
+  text-align: center;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .cultureTxt .moreBtn a {
+  width: 35%;
+  height: 8%;
+  margin: 0 auto;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: #f63a3a;
+  border: 1px solid #000;
+  line-height: 2.5vw;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .cultureTxt .moreBtn a:hover {
+  color: #fff;
+  background-color: #f63a3a;
+  border: 1px solid #f63a3a;
+  text-decoration: none;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .chinatown {
+  -ms-flex-preferred-size: 66.5%;
+      flex-basis: 66.5%;
+  position: relative;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .chinatown img {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox01 .chinatown .contentDetail {
+  position: absolute;
+  bottom: 2%;
+  display: block;
+  width: 100%;
+  height: 10%;
+  max-height: 100px;
+  max-width: 400px;
+  padding-top: .8%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: #fff;
+  text-align: center;
+  background-color: #524c4cb7;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox02 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox02 .kampong {
+  position: relative;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox02 .kampong img {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox02 .kampong .contentDetail {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  display: block;
+  width: 90%;
+  height: 20%;
+  max-height: 100px;
+  max-width: 400px;
+  padding-top: .8%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: #fff;
+  text-align: center;
+  background-color: #524c4cb7;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox02 .littleIndia {
+  position: relative;
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox02 .littleIndia img {
+  width: 100%;
+}
+
+section.mainContentWrap .mainContents .culture .cultureBox02 .littleIndia .contentDetail {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  display: block;
+  width: 90%;
+  height: 20%;
+  max-height: 100px;
+  max-width: 400px;
+  padding-top: .8%;
+  font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: #fff;
+  text-align: center;
+  background-color: #524c4cb7;
+}
+
+section.mainContentWrap .mainContents .item01 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+section.mainContentWrap .mainContents .item02 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+section.mainContentWrap .mainContents .item03 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+section.mainContentWrap .mainContents .item04 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+section.mainContentWrap .mainContents .item05 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+section.mainContentWrap .mainContents .item06 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+section.mainContentWrap .mainContents .item07 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+section.mainContentWrap .mainContents .item08 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+section.mainContentWrap .mainContents .item09 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+footer div {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: auto;
+  padding-left: 5%;
+  padding-bottom: 8%;
+  background-color: #d7d7d7;
+}
+
+footer div:nth-child(even) {
+  background-color: #c2c2c2;
+}
+
+footer h4 {
+  padding-top: 20%;
+  font-size: 0.9vw;
+}
+
+footer .infoList li {
+  padding-top: 10%;
+  font-size: 0.7vw;
+}
+
+footer .connectSns ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .connectSns ul li {
+  padding-right: 5%;
+}
+
+footer .connectSns ul li a {
+  width: 50px;
+  height: 50px;
+  padding-top: 8px;
+  border: 1px solid #524c4c;
+  border-radius: 50%;
+}
+
+footer .connectSns ul li img {
+  width: 70%;
+  margin: 0 auto;
 }
