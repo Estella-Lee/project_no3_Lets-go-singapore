@@ -28,24 +28,26 @@ main {
 }
 
 section.mainContentWrap {
-    .mainTxt {
+    .mainTxtBox {
         width: $width-wide;
-        height: 50vh;
-        max-height: 300px;
-        min-height: 200px;
-        padding-top: 10vh;
-        text-align: center;
+        height: 20vw;
 
-        h2 {
-            @include title-style;
-        }
-        
-        span {
-            font: {
-                size: 1.8vw;
-                weight: bold;
+        .mainTxt {
+            width: $width-wide;
+            padding-top: 5%;
+            text-align: center;
+    
+            h2 {
+                @include title-style;
             }
-            color: $color-text;
+            
+            span {
+                font: {
+                    size: 1.8vw;
+                    weight: bold;
+                }
+                color: $color-text;
+            }
         }
     }
 
@@ -241,7 +243,7 @@ section.mainContentWrap {
                     p {
                         width: 100%;
                         font-size: 0.9vw;
-                        line-height: 2vw;
+                        line-height: 2.2vw;
                         text-align: center;
                     }
 
@@ -263,6 +265,7 @@ section.mainContentWrap {
                     width: $width-wide;
                     img {
                         width: $width-wide;
+                        height: 100%;
                     }
         
                     .contentDetail {
@@ -382,18 +385,30 @@ footer {
             flex-wrap: wrap;
 
             li {
+                width: 25%;
+                height: 25%;
+                min-width: 30px;
+                min-height: 30px;
                 padding-right: 5%;
+                overflow: hidden;
+
                 a {
-                width: 50px;
-                height: 50px;
-                padding-top: 8px;
-                border: 1px solid #524c4c;
+                padding: 0.5vw 0;
+                border: 1px solid $color-second;
                 border-radius: 50%;
                 }
 
                 img {
                     width: 70%;
                     margin: 0 auto;
+                }
+
+                &:hover {
+                    a {
+                        img {
+                            width: 80%;
+                        }
+                    }
                 }
             }
         }
