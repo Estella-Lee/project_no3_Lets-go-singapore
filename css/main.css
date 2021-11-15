@@ -56,22 +56,24 @@ main {
   position: relative;
 }
 
-section.mainContentWrap .mainTxt {
+section.mainContentWrap .mainTxtBox {
   width: 100%;
-  height: 50vh;
-  max-height: 300px;
-  min-height: 200px;
-  padding-top: 10vh;
+  height: 20vw;
+}
+
+section.mainContentWrap .mainTxtBox .mainTxt {
+  width: 100%;
+  padding-top: 5%;
   text-align: center;
 }
 
-section.mainContentWrap .mainTxt h2 {
+section.mainContentWrap .mainTxtBox .mainTxt h2 {
   font-family: "맑은 고딕", Helvetica, Arial, sans-serif;
   font-size: 2vw;
   color: #f63a3a;
 }
 
-section.mainContentWrap .mainTxt span {
+section.mainContentWrap .mainTxtBox .mainTxt span {
   font-size: 1.8vw;
   font-weight: bold;
   color: #524c4c;
@@ -103,6 +105,7 @@ section.mainContentWrap .mainContents .gbb .contentDetail {
   display: block;
   width: 100%;
   height: 10%;
+  min-height: 30px;
   max-height: 100px;
   max-width: 400px;
   padding-top: .8%;
@@ -131,6 +134,7 @@ section.mainContentWrap .mainContents .landmark .contentDetail {
   display: block;
   width: 100%;
   height: 10%;
+  min-height: 30px;
   max-height: 100px;
   max-width: 400px;
   padding-top: .8%;
@@ -159,6 +163,7 @@ section.mainContentWrap .mainContents .slowTrip .contentDetail {
   display: block;
   width: 100%;
   height: 10%;
+  min-height: 30px;
   max-height: 100px;
   max-width: 400px;
   padding-top: .8%;
@@ -274,6 +279,7 @@ section.mainContentWrap .mainContents .raffles .contentDetail {
   display: block;
   width: 100%;
   height: 12%;
+  min-height: 30px;
   max-height: 100px;
   max-width: 400px;
   padding-top: .8%;
@@ -357,7 +363,7 @@ section.mainContentWrap .mainContents .culture .cultureBox01 .cultureTxt h3 {
 section.mainContentWrap .mainContents .culture .cultureBox01 .cultureTxt p {
   width: 100%;
   font-size: 0.9vw;
-  line-height: 2vw;
+  line-height: 2.2vw;
   text-align: center;
 }
 
@@ -394,6 +400,7 @@ section.mainContentWrap .mainContents .culture .cultureBox01 .chinatown {
 
 section.mainContentWrap .mainContents .culture .cultureBox01 .chinatown img {
   width: 100%;
+  height: 100%;
 }
 
 section.mainContentWrap .mainContents .culture .cultureBox01 .chinatown .contentDetail {
@@ -402,6 +409,7 @@ section.mainContentWrap .mainContents .culture .cultureBox01 .chinatown .content
   display: block;
   width: 100%;
   height: 10%;
+  min-height: 30px;
   max-height: 100px;
   max-width: 400px;
   padding-top: .8%;
@@ -442,6 +450,7 @@ section.mainContentWrap .mainContents .culture .cultureBox02 .kampong .contentDe
   display: block;
   width: 90%;
   height: 20%;
+  min-height: 30px;
   max-height: 100px;
   max-width: 400px;
   padding-top: .8%;
@@ -468,6 +477,7 @@ section.mainContentWrap .mainContents .culture .cultureBox02 .littleIndia .conte
   display: block;
   width: 90%;
   height: 20%;
+  min-height: 30px;
   max-height: 100px;
   max-width: 400px;
   padding-top: .8%;
@@ -588,13 +598,16 @@ footer .connectSns ul {
 }
 
 footer .connectSns ul li {
+  width: 25%;
+  height: 25%;
+  min-width: 30px;
+  min-height: 30px;
   padding-right: 5%;
+  overflow: hidden;
 }
 
 footer .connectSns ul li a {
-  width: 50px;
-  height: 50px;
-  padding-top: 8px;
+  padding: 0.5vw 0;
   border: 1px solid #524c4c;
   border-radius: 50%;
 }
@@ -602,4 +615,8 @@ footer .connectSns ul li a {
 footer .connectSns ul li img {
   width: 70%;
   margin: 0 auto;
+}
+
+footer .connectSns ul li:hover a img {
+  width: 80%;
 }
